@@ -554,4 +554,3 @@ if (message.content.startsWith(prefix + 'توب')) {
 }
   
 });
-client.login(process.env.BOT_TOKEN);
