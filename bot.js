@@ -552,5 +552,6 @@ if (message.content.startsWith(prefix + 'توب')) {
    
   	message.channel.sendEmbed(prefixlor)
 }
-  
 });
+
+client.login(process.env.BOT_TOKEN);
