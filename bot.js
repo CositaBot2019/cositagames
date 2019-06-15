@@ -536,22 +536,4 @@ $انمي | $anime
 
 
 
-
-   
-client.on('message', message => {
-      if(message.author.bot) return;
-if (message.content.startsWith(prefix + 'توب')) {
-    let _top = 1;
-     let topp = Object.values(points);
- let top = topp.slice(0, 10).map(users => `**\`.${_top++}\` <@${users.id}> \`| ${users.points}\`**`).sort((a, b) => a > b).join('\n');
-    const prefixlor = new Discord.RichEmbed()
-      .setTitle("LeaderBoard")
-      .setAuthor(client.user.username, client.user.avatarURL)
-      .setDescription(top,true)
-      .setColor('#36393e')
-   
-  	message.channel.sendEmbed(prefixlor)
-}
-  
-});
 client.login(process.env.BOT_TOKEN);
