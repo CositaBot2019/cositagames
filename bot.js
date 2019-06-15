@@ -518,22 +518,4 @@ $انمي | $anime
    
    }
    });
-
-   
-      client.on("message", message => {
-    if (message.content.toLowerCase() === prefix + "help") {
-        message.delete(5000)
-        if(!message.channel.guild) return;
-        const e = new Discord.RichEmbed()
-        .setColor('#36393e')
-        .setTitle('Check Your DM’s | انظر الى الخاص')
-     const embed = new Discord.RichEmbed()
-         .setColor('#36393e')
-         .setTitle('')
-         .setURL('')
-         .setDescription(`
-
-
-
-
 client.login(process.env.BOT_TOKEN);
